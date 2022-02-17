@@ -1,0 +1,35 @@
+This program will display "TRUE" if the user enters a number which is divisible by 3.
+In all other cases the program will return "FALSE".
+
+START 
+
+DECLARE num, sum, rem
+PRINT "Enter the number"
+INPUT user inputs the number 
+STORE the user's input in the num variable
+INITIALIZE sum <- 0 
+
+WHILE (num >= 1)
+
+        rem <- num % 10
+        num <- num / 10
+        sum <- sum + rem
+ENDWHILE
+
+WHILE (sum > 0) 
+
+        sum <- sum - 3
+ENDWHILE
+
+IF (sum == 0)  THEN 
+        PRINT "TRUE"
+
+ELSE 
+        PRINT "FALSE"
+        
+ENDIF
+
+STOP
+
+
+

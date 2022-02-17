@@ -1,0 +1,32 @@
+This program will allow the user to enter a value and return the corresponding element from the 
+Fibonacci's series.
+
+START
+
+DECLARE N, sum, i, firstTerm, lastTerm
+
+PRINT 'Enter the value of N'
+INPUT user inputs the value of N
+STORE the user's input in the variable N
+
+INITIALIZE sum <- 0, firstTerm <- 0 , lastTerm <- 1
+
+IF (N == 0) THEN 
+    PRINT  N
+
+IF (N == 1) THEN 
+    PRINT  N
+
+ELSE 
+    FOR i <- 0 to N-1
+
+        sum <- firstTerm + lastTerm
+        firstTerm <- lastTerm
+        lastTerm <- firstTerm
+    ENDFOR
+
+    PRINT sum
+    
+ENDIF
+
+STOP
